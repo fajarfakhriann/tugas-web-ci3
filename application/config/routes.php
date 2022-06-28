@@ -49,26 +49,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Warga';
-
-// Warga
-
-$route['warga']  = 'Warga/index';
-$route['warga/tambah_data']  = 'Warga/tambah_data';
-$route['warga/insert']  = 'Warga/insert';
-$route['warga/update']  = 'Warga/update';
-$route['warga/edit/(:num)']  = 'Warga/edit/$1';
-$route['warga/hapus/(:num)']  = 'Warga/delete/$1';
-
-
-// AGama
-
-$route['agama']  = 'Agama/index';
-$route['agama/tambah_data']  = 'Agama/tambah_data';
-$route['agama/insert']  = 'Agama/insert';
-$route['agama/update']  = 'Agama/update';
-$route['agama/edit/(:num)']  = 'Agama/edit/$1';
-$route['agama/hapus/(:num)']  = 'Agama/delete/$1';
+$route['default_controller'] = 'auth';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

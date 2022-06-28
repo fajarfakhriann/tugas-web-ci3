@@ -30,7 +30,7 @@
 
 
                                                       <div class="card-header">
-                                                               <a href="<?= base_url('index.php/agama/tambah_data'); ?>"
+                                                               <a href="<?= base_url('agama/tambah_data'); ?>"
                                                                         class="btn btn-success float-right">Tambah
                                                                </a>
                                                       </div>
@@ -78,9 +78,9 @@
                                                                                           <td><?= $d->status == true ? 'Aktif' : 'Tidak Aktif'; ?>
                                                                                           </td>
                                                                                           <td>
-                                                                                                   <a href="<?= base_url(); ?>index.php/agama/edit/<?= $d->id_agama; ?>"
+                                                                                                   <a href="<?= base_url(); ?>/agama/edit/<?= $d->id_agama; ?>"
                                                                                                             class="btn btn-warning">Edit</a>
-                                                                                                   <a href="agama/hapus/<?= $d->id_agama; ?>"
+                                                                                                   <a href="<?= base_url(); ?>/agama/hapus/<?= $d->id_agama; ?>"
                                                                                                             class="btn btn-danger">Hapus</a>
                                                                                           </td>
                                                                                  </tr>

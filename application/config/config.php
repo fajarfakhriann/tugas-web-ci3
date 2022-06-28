@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/TUGAS-WEB-PRO/';
+$config['base_url'] = 'http://localhost/tugas-web-ci3/';
 
 /*F
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/TUGAS-WEB-PRO/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = "";
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

@@ -30,7 +30,7 @@
 
 
                                                       <div class="card-header">
-                                                               <a href="<?= base_url('index.php/warga/tambah_data'); ?>"
+                                                               <a href="<?= base_url('warga/tambah_data'); ?>"
                                                                         class="btn btn-success float-right">Tambah
                                                                </a>
                                                       </div>
@@ -93,9 +93,9 @@
 
                                                                                           </td>
                                                                                           <td>
-                                                                                                   <a href="<?= base_url(); ?>index.php/warga/edit/<?= $d->id; ?>"
+                                                                                                   <a href="<?= base_url(); ?>/warga/edit/<?= $d->id; ?>"
                                                                                                             class="btn btn-warning">Edit</a>
-                                                                                                   <a href="index.php/warga/hapus/<?= $d->id; ?>"
+                                                                                                   <a href="<?= base_url(); ?>/warga/hapus/<?= $d->id; ?>"
                                                                                                             class="btn btn-danger">Hapus</a>
                                                                                           </td>
                                                                                  </tr>

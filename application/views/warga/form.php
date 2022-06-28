@@ -30,7 +30,7 @@
 
 
                                                       <form method="POST"
-                                                               action="<?= !empty($warga->id) ? base_url('index.php/warga/update') : base_url('index.php/warga/insert'); ?>">
+                                                               action="<?= !empty($warga->id) ? base_url('/warga/update') : base_url('/warga/insert'); ?>">
                                                                <div class="card-body">
                                                                         <div class="form-group">
                                                                                  <label for="Nama">Nama</label>

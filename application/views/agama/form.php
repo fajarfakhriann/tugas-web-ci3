@@ -30,7 +30,7 @@
 
 
                                                       <form method="POST"
-                                                               action="<?= !empty($agama->id_agama) ? base_url('index.php/agama/update') : base_url('index.php/agama/insert'); ?>">
+                                                               action="<?= !empty($agama->id_agama) ? base_url('agama/update') : base_url('agama/insert'); ?>">
                                                                <div class="card-body">
                                                                         <div class="form-group">
                                                                                  <label for="Nama">Nama</label>
@@ -63,7 +63,7 @@
                                                                </div>
 
                                                                <div class="card-footer">
-                                                                        <a href="<?= base_url('/index.php/agama'); ?>"
+                                                                        <a href="<?= base_url('agama'); ?>"
                                                                                  class="btn btn-secondary">Back</a>
 
                                                                                  <div class="float-right">

@@ -1,3 +1,13 @@
+  <?php
+  $email = $this->session->userdata('email');
+
+  $user = $this->db->from('auth')->where('email', $email)->get()->row();
+
+ 
+
+
+  ?>
+  
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
            <!-- Brand Logo -->
@@ -16,7 +26,7 @@
                                                class="img-circle elevation-2" alt="User Image">
                              </div>
                              <div class="info">
-                                      <a href="#" class="d-block">Alexander Pierce</a>
+                                      <a href="#" class="d-block"><?= $user->nama;?></a>
                              </div>
                     </div>
 
@@ -56,7 +66,7 @@
                                                </ul>
                                       </li> -->
                                       <li class="nav-item">
-                                               <a href="<?= base_url('/'); ?>"
+                                               <a href="<?= base_url('/warga'); ?>"
                                                         class="nav-link <?= ($this->uri->segment(1) == "" || $this->uri->segment(1) == "warga") ? 'active' : ''; ?>">
                                                         <i class="nav-icon fas fa-users"></i>
                                                         <p>
@@ -66,7 +76,7 @@
                                                </a>
                                       </li>
                                       <li class="nav-item">
-                                               <a href="<?= base_url('/index.php/agama'); ?>"
+                                               <a href="<?= base_url('/agama'); ?>"
                                                         class="nav-link <?= $this->uri->segment(1) == "agama" ? 'active' : ''; ?>">
                                                         <i class="nav-icon fas fa-praying-hands"></i>
                                                         <p>
