@@ -101,7 +101,7 @@ class Agama extends CI_Controller
 		return redirect(base_url('agama'));
 	}
 
-	public function delete($id = null)
+	public function hapus($id = null)
 	{
 		$this->db->where('id_agama', $id);
 		$this->db->delete('agama');

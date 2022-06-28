@@ -111,7 +111,7 @@ class Warga extends CI_Controller
 		return redirect(base_url('warga'));
 	}
 
-	public function delete($id = null)
+	public function hapus($id = null)
 	{
 		$this->db->where('id', $id);
 		$this->db->delete('warga');
