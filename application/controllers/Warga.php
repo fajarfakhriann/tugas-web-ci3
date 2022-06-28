@@ -71,7 +71,7 @@ class Warga extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Menambah Data');
 
-		return redirect(base_url('/'));
+		return redirect(base_url('warga'));
 	}
 
 	public function edit($id = null)
@@ -108,7 +108,7 @@ class Warga extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Mengubah Data');
 
-		return redirect(base_url('/'));
+		return redirect(base_url('warga'));
 	}
 
 	public function delete($id = null)
@@ -118,6 +118,6 @@ class Warga extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Menghapus Data');
 
-		return redirect(base_url('/'));
+		return redirect(base_url('warga'));
 	}
 }

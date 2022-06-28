@@ -8,7 +8,7 @@ class Agama extends CI_Controller
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
+	 * 		http://example.comwelcome
 	 *	- or -
 	 * 		http://example.com/index.php/welcome/index
 	 *	- or -
@@ -67,7 +67,7 @@ class Agama extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Menambah Data');
 
-		return redirect(base_url('/index.php/agama'));
+		return redirect(base_url('agama'));
 	}
 
 	public function edit($id = null)
@@ -98,7 +98,7 @@ class Agama extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Mengubah Data');
 
-		return redirect(base_url('/index.php/agama'));
+		return redirect(base_url('agama'));
 	}
 
 	public function delete($id = null)
@@ -112,6 +112,6 @@ class Agama extends CI_Controller
 
 		$this->session->set_flashdata('success', 'Berhasil Menghapus Data');
 
-		return redirect(base_url('/index.php/agama'));
+		return redirect(base_url('agama'));
 	}
 }
